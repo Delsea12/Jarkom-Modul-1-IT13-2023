@@ -5,6 +5,14 @@
 | Della Setyowati | 5027211044 | 
 | Wisnu Adjie Saka| 5027211051 | 
 
+#### 1. User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
+##### a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
+##### b. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
+##### c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+##### d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+- 
+
 #### 2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 - Karena yang ditanyakan web server, yang pertama kita lakukan adalah filtering dengan kata "HTTP"
 - Setelah itu follow HTTP streamnya
@@ -17,9 +25,8 @@
 ![Screenshot 2023-09-21 224408](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/e4d5f44c-0e59-41b2-add1-2437122212cd)
 
 #### 3. Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
-a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702
-
-b. Protokol layer transport apa yang digunakan?
+##### a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702 
+##### b. Protokol layer transport apa yang digunakan?
 
 - Yang pertama kita harus melakukan filtering dengan query  “(ip.dst == 239.255.255.250) && udp.port == 3702” , jadi nanti akan terfilter IP destination 239.255.255.250 dengan port 3702
 - Setelah itu untuk mengetahui berapa banyak paket yang berjalan bisa di cek di kanan bawah , yaitu 21 paket
@@ -37,6 +44,34 @@ b. Protokol layer transport apa yang digunakan?
 
 - Membaca flag bisa melalui ubuntu dengan melakukan nc 10.21.78.111 13591 maka akan didapatkan flags Jarkom2023{ch3cksum_is_u5eful_0x9e8u}. Dengan memasukan 0x18e5 yang terdapat pada checksum 
 ![untitled](https://cdn.discordapp.com/attachments/901344920361656355/1154384442194931793/image.png)
+
+#### 5. Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
+##### a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+##### b. Port berapakah pada server yang digunakan untuk service SMTP?
+##### c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+
+- Jadi pada soal ini diberikan 2 file, file pcap dan file zip, pada soal ini berbeda dari yang lain, nc nya tidak diberikan
+- Pada saat file zip nya dibuka terdapat sebuat file .txt yang diberikan password
+- Untuk mencari clue untuk pw nya kita bisa membuka file pcap nya, dan cek-cek stream TCP nya
+- Setelah melakukan investigasi, telah ditemukan clue untuk pw nya yaitu encode dari password nya menggunakan Base64
+- Kita langsung melakukan decode Base64 , langsung didapatkan nya password untuk membuka file .txt tersebut, yang ternyata berisi nc dari soal ini, akhir nya kita bisa menjawab soal dari nomor ini
+- Kita dapat melihat jumlah paket di file tersebut pada kanan bawah, ada 60 paket
+- Lalu kita bisa melakukan filtering dengan kata kunci SMTP untuk mencari letak protocol itu ada di port berapa, dia ada di port 25
+- Dan akhirnya untuk mengetahui mana IP yang publik, kalian bisa mencoba semua IP yang ada di file tersebut sampai benar, karena di file tersebut hanya terdapat 2 IP jadi gunakan cara ini saja ( IP yang publik “74.53.140.153”)
+
+![Screenshot 2023-09-21 230521](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/780630a7-a7d8-4279-99fe-330f3b15928d)
+
+![Screenshot 2023-09-21 230536](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/0363b81e-7807-4dc1-86b8-675007c24dad)
+
+![Screenshot 2023-09-21 230549](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/675820e2-f52f-4248-a562-3cb947ec4ba6)
+
+![Screenshot 2023-09-21 230603](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/80edb669-a5cc-408c-942b-3c6e425e083e)
+
+![Screenshot 2023-09-21 230618](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/c6d5839d-6f59-4472-b355-35e7b5b861c7)
+
+![Screenshot 2023-09-21 230633](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/d24078d9-2a04-40b9-9a3b-7615553e2400)
+
+![Screenshot 2023-09-21 230645](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/7a7a3508-3878-4567-94ce-167855480bc2)
 
 #### 7. Berapa jumlah packet yang menuju IP 184.87.193.88?
 - Mendapatkan jumlah packet ip 184.87.193.88 bisa dilakukan dengan cara memfilter ip address tersebut pada display filter, selanjutnya kita dapat mengetahui jumlah dari ip packet tersebut, dan didapatkan sebanyak 6
