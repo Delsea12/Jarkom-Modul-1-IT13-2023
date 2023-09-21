@@ -6,6 +6,28 @@
 | Wisnu Adjie Saka| 5027211051 | 
 
 #### 2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+- Karena yang ditanyakan web server, yang pertama kita lakukan adalah filtering dengan kata "HTTP"
+- Setelah itu follow HTTP streamnya
+- Langsung muncul nama server yang digunakan pada HTTP stream tersebut
+
+![Screenshot 2023-09-21 224338](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/edc1c4cc-14fe-4395-9e3b-cff30e4e78eb)
+
+![Screenshot 2023-09-21 224354](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/ae6a3b4f-2559-4507-8ff1-51050e2100e8)
+
+![Screenshot 2023-09-21 224408](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/e4d5f44c-0e59-41b2-add1-2437122212cd)
+
+#### 3. Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
+a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702
+
+b. Protokol layer transport apa yang digunakan?
+
+- Yang pertama kita harus melakukan filtering dengan query  “(ip.dst == 239.255.255.250) && udp.port == 3702” , jadi nanti akan terfilter IP destination 239.255.255.250 dengan port 3702
+- Setelah itu untuk mengetahui berapa banyak paket yang berjalan bisa di cek di kanan bawah , yaitu 21 paket
+- Dan protocol yang yang digunakan juga bisa di cek di section protokol, yaitu UDP
+
+![Screenshot 2023-09-21 225300](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/a7908c19-bb5e-42a4-86a5-fe955ab5356f)
+
+![Screenshot 2023-09-21 225318](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/692128c2-2daf-4f7a-812f-a9429ca6542b)
 
 #### 4. Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 - Pada no 4 kita diminta untuk mencari nilai checksum dari pada paket nomor 130, kita bisa mencari yang paket nomor 130
