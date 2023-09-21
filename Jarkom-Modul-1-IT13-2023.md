@@ -40,5 +40,5 @@
 - Untuk mendapatkan kredensial yang benar, bisa di cek satu per satu setiap kredesnsial pada stream nya untuk di input di nc yang sudah disediakan pada soalnya
 - Setelah mendapatkan kredensial yang benar , akan langsung dapat flag nya
 
-![untitled](https://cdn.discordapp.com/attachments/901344920361656355/1154393256273125376/image.png)
+![Screenshot 2023-09-21 223838](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/f0971ebb-7eb0-4064-b77c-630773ffae0e)
 
