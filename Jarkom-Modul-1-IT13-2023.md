@@ -42,3 +42,5 @@
 
 ![Screenshot 2023-09-21 223838](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/f0971ebb-7eb0-4064-b77c-630773ffae0e)
 
+![Screenshot 2023-09-21 224202](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/a4a071ff-ea27-4542-9e50-b03cfccd80af)
+
