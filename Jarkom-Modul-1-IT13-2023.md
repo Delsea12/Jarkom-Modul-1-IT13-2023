@@ -5,6 +5,8 @@
 | Della Setyowati | 5027211044 | 
 | Wisnu Adjie Saka| 5027211051 | 
 
+#### 2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+
 #### 4. Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 - Pada no 4 kita diminta untuk mencari nilai checksum dari pada paket nomor 130, kita bisa mencari yang paket nomor 130
 - Mencari nilai checksum dan ditemukan pada header dalam User Datagram Protocol
@@ -30,3 +32,13 @@
 - Untuk mendapatkan flags dan memfilter query dapat langsung dilakukan pada ubuntu 
 
 ![untitled](https://cdn.discordapp.com/attachments/901344920361656355/1154393256273125376/image.png)
+
+#### 10. Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
+- Pertama kita melakukan filtering dengan kata kunci "Telnet"
+- Lalu kita follow TCP stream nya (boleh yang mana saja yg penting protocol telnet)
+- Setelah follow stream nya, akan ada kredensial id dan password
+- Untuk mendapatkan kredensial yang benar, bisa di cek satu per satu setiap kredesnsial pada stream nya untuk di input di nc yang sudah disediakan pada soalnya
+- Setelah mendapatkan kredensial yang benar , akan langsung dapat flag nya
+
+![untitled](https://cdn.discordapp.com/attachments/901344920361656355/1154393256273125376/image.png)
+
