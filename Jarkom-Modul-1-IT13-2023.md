@@ -11,7 +11,17 @@
 ##### c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 ##### d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
-- 
+- Pertama yang kita lakukan adalah melakukan filtering dengan kata kunci "FTP"
+- Karena pada soal terdapat pernyataan "User melakukan berbagai aktivitas dengan menggunakan protokol FTP"
+- Kita cari bagian mana yang user sedang melakukan aktifitas, cari dengan kata kunci "STOR"
+- Jika sudah kita bisa cek Transmission Control Protocol nya untuk melihat Sequence Number (raw) dan acknowledge number (raw) nya.
+- Setelah menjawab pertanyaan nya langsung didapatkan flag tersebut
+
+![Screenshot 2023-09-21 232219](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/8e401c57-8c56-41a1-ac4f-3b9d3f00fb3e)
+
+![Screenshot 2023-09-21 232231](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/7fcef099-55aa-4abe-89af-49004b2b1f59)
+
+![Screenshot 2023-09-21 232245](https://github.com/Delsea12/Jarkom-Modul-1-IT13-2023/assets/113821220/58970a51-7280-41ad-bedc-bb32bf3f2a35)
 
 #### 2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 - Karena yang ditanyakan web server, yang pertama kita lakukan adalah filtering dengan kata "HTTP"
